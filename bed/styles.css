@@ -1,0 +1,29 @@
+.normal-text {
+  font-family: Arial, sans-serif;
+  color: green;
+}
+
+.weird-text {
+  font-family: "Comic Sans MS", cursive;
+  transform: rotate(2deg) skew(-2deg);
+  letter-spacing: 2px;
+}
+
+.abnormal-text {
+  color: red;
+}
+
+#detectButton {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#detectButton:hover {
+  background-color: #0056b3;
+} 

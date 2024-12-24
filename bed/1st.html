@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>壓瘡防治</title>
+  <link rel="stylesheet" href="1st.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="start.html" class="back-button">返回列表</a>
+      <h1>壓瘡防治 <br>(黃大明)</h1>
+    </header>
+
+    <div class="info-cards">
+      <div class="card">
+        <p class="label">攝氏溫度</p>
+        <p class="value" id="tempValue">未偵測</p>
+        <p class="subtext" id="tempAvg">未偵測</p>
+      </div>
+      <div class="card abnormal">
+        <p class="label">姿勢判斷</p>
+        <p class="value normal-text">正常</p>
+      </div>
+      <div class="card">
+        <p class="label">呼叫</p>
+        <p class="value" id="callStatus">待機中</p>
+        <p class="subtext" id="callSubtext">待機中</p>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div class="chart">
+        <h2>壓力感應</h2>
+        <img src="img/S__31678508.jpg" alt="壓力感應圖">
+      </div>
+      <div class="chart">
+        <h2>壓力分佈圖</h2>
+        <img src="img/159064.jpg" alt="壓力分佈圖">
+        <button id="detectButton" onclick="toggleStatus()">偵測中</button>
+        <a href="history.html" class="history-link">查看歷史紀錄</a>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p>正在偵測中，請稍後...</p>
+      </div>
+    </div>
+    <script src="1st.js"></script>
+</body>
+</html>
